@@ -1,17 +1,58 @@
 
-   * {
-  margin:0; padding:0; border:0; box-sizing:border-box; 
-  font-family: 'Shadows Into Light', cursive;
-   } 
- 
+* {
+margin:0; padding:0; border:0; box-sizing:border-box; 
+font-family: 'Shadows Into Light', cursive;
+} 
 
-   h1 {
-    padding-left:.5em;
+
+h1 {
+padding-left:.5em;
+padding-top: .2em;
+font-family: 'Shadows Into Light', cursive;
 }
 
-h2, h3, h4, h5, h6, p {
+h2 {
     padding-left:1.5em;
-    font-weight:300;
+    /* font-weight:500; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 3.5rem;
+    
+} 
+
+h3, h4, h5, h6  {
+    padding-left:1.5em;
+    /* font-weight:500; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    
+} 
+
+p {
+    padding-left:1.5em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+  
+    
+}
+
+a:link {
+    text-decoration: none;
+    color:purple;
+}
+
+
+a:hover {
+    color:orange;
+    font-weight: 700;
+}
+
+#current {
+    color:white
+}
+
+
+img {
+    padding-left:1.5em;
 }
 
 .container{
@@ -25,8 +66,6 @@ flex-wrap: wrap;
     background: white;
 }
 
-
-
 /* navigation */
 nav {
     background-color:#2c9ab7; min-height: 75px;
@@ -35,13 +74,13 @@ nav {
 }
 
 nav ul {
-text-align: right;   
-list-style-type: none;
-padding: 0;
-height: 100%;
-margin: 0;
-width: 100%;
-align-content:center; 
+    text-align: right;   
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    align-content:center; 
 }
 
 nav li {
@@ -52,26 +91,25 @@ nav li {
     font-size: 2rem;
 }
 
-/* article one */
-.middle {
-    background-color: #623e80;
-    color: white;
-    text-align: left;
-}
-
-
-/* aside */
+/* aside on index page */
 
 aside {
-
     background-color: #623e80;
-    flex: 0 0 200px;
+}
+aside:nth-child(1) {
+    flex: 0 0 350px;
 }
 
 .first img {
-    
+    padding: 0;
     background-color: #623e80;
-    width:75%
+    width:75%;
+   }
+
+.first h1 {
+    color:white;
+    padding-left:6%;
+    padding-top:15px;
 }
 
 blockquote {
@@ -86,19 +124,20 @@ font-family: 'Shadows Into Light', cursive;
 
 }
 
-.first img {
-    padding: 0;
-}
 
-/* main content */
+
+/* main content  index page*/
 main {
     display:flex; flex-flow: row nowrap; 
     min-height:500px;
 }
 
-aside:nth-child(1) {
-    flex: 0 0 250px;
+.skills:nth-child(1) {
+   
+    color: silver;
 }
+
+
 
 .padding {
     padding:1%;
@@ -108,31 +147,110 @@ article {
     flex: 1 0 auto;
 }
 
-article h1 {
-    display: inline-flex;
-    text-align:right;
-    /* padding: 1%; */
+/* aside on resume page */
+
+.skills {
+    display:inline-block;
+    color: white;    
+    font-weight: 700;
+    line-height: 1.5em;
+    font-family: 'Shadows Into Light', cursive;
+   
 }
 
-article h2 {
-     padding-top: 1%;
-}
 
-.resume {
-    display:inline-flex;
-}
+.para1 {
+    display:inline-block;
+    color: white;    
+    font-weight: 700;
+    line-height: 2em;
+    font-size: 2em;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left:1em;
+    } 
 
-.resume h1 {
+.para1 .para2 .para3 p {
+    display:inline-block;
+    color: white;    
+    font-weight: 700;
+    line-height: 3em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    padding-left:1em;
+    padding-right:5rem;
+    } 
+
+.para2 {
+    display:inline-block;
+    color: white;    
+    font-weight: 700;
+    line-height: 2em;
+    font-size: 2em;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left:1em;
+    } 
+
+.para3 {
+
+    display:inline-block;
+    color: white;    
+    font-weight: 700;
+    line-height: 2em;
+    font-size: 2em;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left:1em;
+    } 
+
+
+/* resume main body */
+.resume-page {
+    display: block;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    padding-left: 2%
+    
 }
 
-.resume p {
+.larger {
+    
+    padding-left: 3%;
+    font-size: 3rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.resume-page  h2, h3, h4, h5 {
+    
+    padding-left: 3%;
+    padding-bottom: .5%;
+    
+}
+
+.resume-page p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    padding-left:3%;
+    padding-right:8%;
+    line-height: 1.5rem;
+   }
+
+.resume-page ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-left:6%;
+    padding-right:2%;
+    line-height:1.5rem;
+   }
+
+.resume-page li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-left:2%;
+    padding-right:2%;
+    list-style:disc;
+   
+   
 }
-
-
 
 figure {
     display: inline-flex;
@@ -140,46 +258,7 @@ figure {
     padding: 5%;
 }
 
-
-article p {
-    display: inline-flex;
-    text-align: center;
-    padding: 5%;
-}
-
-article a {
-    color:#2c9ab7;
-    font-size:1rem;
-    font-weight: 700;
-}
-
-aside:nth-child(3) {
-    flex: 0 0 20px;
-}
-   
-   
-a:link {
-    text-decoration: none;
-    color:purple;
-}
-
-/* a:active {
-    color:black
-} */
-
-a:hover {
-    color:orange;
-}
-
-.active {
-    color:white;
-}
-
-img {
-    padding-left:1.5em;
-}
-
-footer {
+ footer {
     text-align:center;
     min-height: 50px;
     background-color: #2c9ab7;
